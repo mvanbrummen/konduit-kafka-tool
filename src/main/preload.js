@@ -4,13 +4,7 @@ const KafkaWrapper = require('./kafkawrapper');
 
 const store = new Store({
   projectName: 'konduit',
-
-  //  cwd: '/Users/mvanbrummen/workspace/electron-react-boilerplate',
 });
-//   {
-//   encryptionKey:
-//     'p8x3kVn2pkv&Qv&^8Xj&pVN5R@UC9Fn9x65oBjh9YAEdPR*4HXeSkiumBGZnjK62kztWRQ5ZjwC$m684G82k8LiC5XkT3!dgor7!',
-// }
 
 const kafkawrapper = new KafkaWrapper(store.get('connections', {}));
 
